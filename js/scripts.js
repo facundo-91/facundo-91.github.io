@@ -89,7 +89,7 @@ $(".ajax-form").validate({
 	submitHandler: function(form) {
 		$.ajax({
 			dataType: "jsonp",
-			url: "http://getsimpleform.com/messages/ajax?form_api_token=011d3098287bb1dc147ad8132638d31d",
+			url: "https://getsimpleform.com/messages/ajax?form_api_token=011d3098287bb1dc147ad8132638d31d",
 			data: $(".ajax-form").serialize() 
 		}).done(function() {
 		//callback which can be used to show a thank you message
