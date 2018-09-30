@@ -236,7 +236,7 @@ a .fa-angle-double-down:hover {
 .text-wrap p {
 	text-transform: uppercase;
 	font-weight: bold;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.031rem;
 	text-align: center;
 	font-size: 1rem;
 	padding-bottom: 5rem;
