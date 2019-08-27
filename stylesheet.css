@@ -1,12 +1,6 @@
 body {
+	font-family: 'Lato', sans-serif;
 	position: relative;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 1.8;
-	color: #f5f6f7;
-}
-h1 {
-	text-transform: uppercase;
-	color: #333;
 }
 p {
 	font-size: 1.5rem;
@@ -14,9 +8,16 @@ p {
 a:hover, a:focus, a:active, a:visited, a:link {
 	text-decoration: none;
 }
+.section-title {
+	font-size: 1.875rem;
+	text-align: center;
+	text-transform: uppercase;
+	color: #425066;
+}
 hr {
-	border: solid 1px #333;
-	max-width: 15rem;
+	width: 6rem;
+	border: 0;
+	border-top: 3px solid #425066;
 }
 
 /*==================================================*/
@@ -27,7 +28,7 @@ hr {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	color: #ffffff;
+	color: #fff;
 	text-align: center;
 	height: 100vh;
 	min-height: 20rem;
@@ -37,14 +38,16 @@ hr {
 	align-items: center;
 }
 #home h1 {
-	font-size: 4rem;
+	font-size: 2rem;
 	color: #fff;
+	text-transform: uppercase;
 }
 #home h5 {
-	font-size: 2rem;
+	font-size: 1rem;
 }
 #home hr {
-	border-color: #fff;
+	border: solid 1px #fff;
+	max-width: 15rem;
 }
 #social a {
 	color: white;
@@ -90,7 +93,6 @@ a .fa-angle-double-down {
 	font-size: 2rem;
 	position: relative;
 	color: white;
-	
 }
 a .fa-angle-double-down:hover {
 	color: grey;
@@ -101,55 +103,35 @@ a .fa-angle-double-down:hover {
 /*===================== NAVBAR =====================*/
 
 .navbar {
-	z-index: 9999;
-	overflow: hidden;
-	margin-bottom: 0;
-	background: rgba(0, 0, 0, 0.8);
-	box-shadow: 0 8px 6px -6px black;
+	background: #fff;
 	letter-spacing: 0.1rem;
-	border: 0;
-	padding: 0 1rem;
-}
-.nav-link {
-	padding: 1rem;
+	border-bottom: #dadce0 1px solid;
+	overflow: hidden;
+	z-index: 9999;
 }
 .navbar-brand {
 	text-transform: uppercase;
 	margin: auto;
 }
-.navbar-dark .navbar-nav { 
-	font-size: 0.9rem; 
-	color: #fff; 
+.navbar-toggler:focus {
+	outline: none;
+}
+.navbar-nav .nav-link { 
+	font-size: 0.875rem;
 	text-transform: uppercase; 
+	text-align: center;
+	padding: 1rem 0;
 }
-.navbar-dark .navbar-nav .nav-link { 
-	color: #fff; 
-	color: rgba(255, 255, 255, 0.4);
-}
-.navbar-nav li a {
-	border-bottom: solid 5px rgba(0,0,0,0);
-}
-.navbar-nav li a:hover {
-	background-color: rgba(255,255,255,0.4);
-}
-.navbar-nav li a.active {
-	color: #fff !important;
-	border-color: rgba(255,255,255,0.9);
-}
-.navbar-dark .navbar-nav .nav-link:hover { 
-	color: #fff; 
-}
-.navbar-dark .navbar-nav .nav-link:focus { 
-	color: #fff; 
-	outline: 0; 
+.navbar-nav .nav-link:focus {
+	outline: 0;
 }
 .sticky {
 	position: fixed;
 	top: 0;
 	width: 100%;
 }
-.sticky + #about {
-	padding-top: 7rem;
+.sticky + #projects {
+	padding-top: 6rem;
 }
 
 /*==================================================*/
@@ -475,161 +457,5 @@ a .fa-angle-double-down {
 
 /*==================================================*/
 /*=================== RESPONSIVE ===================*/
-
-/* Phones / Tablets */
-@media (min-width: 320px) and (max-width: 859px) {
-	.navbar.navbar-no-bg { 
-		background: #04081A; 
-	}
-	.navbar-dark .navbar-toggler { 
-		border-color: #04081A; 
-	}
-	.navbar-dark .navbar-toggler:focus { 
-		background: #333;
-		outline: 0; 
-	}
-	.navbar-expand-md .navbar-nav .nav-link { 
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-	}
-	#home h1 {
-		font-size: 2rem;
-	}
-	#home h5 {
-		font-size: 1rem;
-	}
-	#about h1, #projects h1, #contact h1 {
-		font-size: 1.8rem;
-	}
-	.border-avatar {
-		height: 10rem;
-		width: 10rem;
-		margin: 0 0.5rem;
-	}
-	.avatar {
-		max-width: 9.375rem;
-		margin: 0.125rem;
-	}
-	.about-txt {
-		font-size: 1.2rem;
-	}
-	.about-title {
-		margin-top: 1rem;
-	}
-	.icon {
-		font-size: 2rem;
-	}
-	.titles {
-		font-size: 1.3rem;
-	}
-	.thumbnail {
-		width: 20rem;
-		height: calc(20rem / 16 * 9);
-	}
-	.text-wrap p {
-		padding-bottom: 3rem;
-	}
-	.text-proj {
-		margin: 0 2rem;
-	}
-	#contact .container {
-		border-radius: 0;
-	}
-	.form-thank-you p {
-		font-size: 1.2rem;
-	}
-	footer p {
-		font-size: 0.8rem;
-	}
-	footer p, footer a, footer li a {
-		color: rgba(255, 255, 255, 0.8);
-	}
-	footer .footer-container {
-		flex-direction: column;
-	}
-	footer .footer-container .footer-nav {
-		padding: 1rem 0 0;
-	}
-	footer .footer-container .footer-icons {
-		  width: 12rem;
-		  font-size: 1.7em;
-		  margin: 0;
-	}
-}
-@media (max-width: 767px) {
-	.navbar {
-		padding: .5rem 1rem;
-	}
-	.navbar-nav li a.active {
-		border-bottom: none;
-		border-left: solid 5px rgba(255, 255, 255, 0.4);
-	}
-}
-
-/* Tablets - Landscape */
-@media (min-width: 860px) and (max-width: 1279px) {
-	#home h1 {
-		font-size: 2.5rem;
-	}
-	#home h5 {
-		font-size: 1.25rem;
-	}
-	#about h1, #projects h1, #contact h1 {
-		font-size: 2rem;
-	}
-	.border-avatar {
-		height: 10rem;
-		width: 10rem;
-		margin: 0 0.5rem;
-	}
-	.avatar {
-		max-width: 9.375rem;
-		margin: 0.125rem;
-	}
-	.about-txt {
-		font-size: 1.2rem;
-	}
-	.icon {
-		font-size: 2rem;
-	}
-	.titles {
-		font-size: 1.3rem;
-	}
-	.thumbnail {
-		width: 22rem;
-		height: calc(22rem / 16 * 9);
-	}
-	.text-wrap p {
-		padding-bottom: 4.2rem;
-	}
-	#contact .container {
-		border-radius: 0;
-	}
-}
-
-/* Laptops / Small Desktops */
-@media (min-width: 1280px) and (max-width: 1439px) {
-	#home h1 {
-		font-size: 3rem;
-	}
-	#home h5 {
-	font-size: 1.5rem;
-	}
-	.about-txt {
-		font-size: 1.3rem;
-	}
-	.thumbnail {
-		width: 20rem;
-		height: calc(20rem / 16 * 9);
-	}
-	.text-wrap p {
-		padding-bottom: 3rem;
-	}
-	footer .row {
-		max-width: 70rem;
-	}
-}
-
-
 
 
