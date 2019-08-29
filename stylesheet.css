@@ -192,6 +192,7 @@ a .fa-angle-double-down:hover {
 	background-color: #f5f5f5;
 	text-align: center;
 	padding-top: 6rem;
+	padding-bottom: 3rem;
 }
 .border-avatar {
 	width: 13.125rem;
@@ -224,54 +225,53 @@ a .fa-angle-double-down:hover {
 /*===================== CONTACT ====================*/
 
 #contact {
-	padding-top: 7rem;
+	padding-top: 6rem;
 	padding-bottom: 3rem;
-	background-color: #f3f4f6;
-	color : #333; 
+	background-color: #e0e0e0;
+	color : #fff;
 }
-#contact h1 {
-	text-align: center;
-}
-#contact .container {
-	max-width: 60rem;
+.form-wrap {
 	padding: 1rem;
-	margin-top: 3rem;
-	background-color: #fff;
-	border: solid 2px #97a3b7;
-	border-radius: 1rem;
-	box-shadow: 0.5rem 0.5rem 1rem 0.5rem #97a3b7;
-	color: black;
-}
-.form-group {
 	margin: 1rem;
+	background-color: #fff;
+	border: solid 1px #dadce0;
+	border-radius: 0.5rem;
+	color: #000;
+	box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.30);
 }
-label {
-	font-size: 1.2rem;
-	line-height: 1rem;
+.input-group {
+	margin: 1rem auto;
+}
+.input-group-text {
+	background-color: #37474f;
+	color: #fff;
+	border-radius: 0.3rem;
 }
 .form-control{
 	font-size: 1rem;
+	background-color: #f5f6f7;
+	border-color: #f5f6f7;
 	color: #080808;
-	border-radius: 2rem;
+	border-radius: 0.3rem;
 	height: 2.5rem;
+}
+.form-control:focus {
+	background-color: #fff;
+	border-color: #dadce0;
+	box-shadow: none;
 }
 textarea.form-control {
 	height: 10rem;
-	border-radius: 0.5rem;
+	border-radius: 0.3rem;
 }
 .submit {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin: 1rem;
-	padding: 0.5rem 1rem;
-	background-color: transparent;
-	color: #000;
-	border: solid 1px grey;
-	border-radius: 2rem;
-	transition: all .3s ease-in-out;
-}
-.submit:hover {
-	background-color: #272727;
-	color:#fff;
+	padding: 0.5rem 1.5rem;
+	background-color: #37474f;
+	color: #fff;
+	border-radius: 0.5rem;
+	transition: all .2s ease-in-out;
 }
 .form-thank-you {
 	display: none;
@@ -296,10 +296,8 @@ textarea.form-control {
 	background: rgba(0, 0, 0, 0.7);
 	width: 3rem;
 	height: 3rem;
-	display: block;
 	text-decoration: none;
 	border-radius: 2rem;
-	display: none;
 	transition: all 0.3s ease;
 }
 #return-to-top i {
@@ -307,7 +305,7 @@ textarea.form-control {
 	margin: 0;
 	position: relative;
 	left: 1rem;
-	top: 0.7rem;
+	top: 0.8rem;
 	font-size: 1.2rem;
 	transition: all 0.3s ease;
 }
@@ -324,56 +322,57 @@ textarea.form-control {
 
 footer {
 	background: #272727;
-	font-size: 0.9rem;
-	height: 11rem;
 	letter-spacing: 0.0625rem;
 }
-footer .row {
-	padding: 0 1rem;
-	margin: 0 auto;
-	max-width: 85rem;
-	display: block;
-}
-footer p, footer a, footer li a {
+footer a {
 	color: #808080;
 }
 footer a:hover {
-	color: white;
+	color: #fff;
 }
 footer p {
-	text-align: center;
 	font-size: 0.8rem;
-	margin-top: 0.8rem;
+	text-align: center;
+	color: #808080;
+	margin: 0;
+	padding: 1.5rem 0;
 }
-footer .footer-container {
+.footer-container {
+	display: block;
+	margin: 0 auto;
+	padding: 0 1rem;
+	max-width: 85rem;
+}
+.footer-wrap {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-direction: column;
 }
-footer .footer-container .footer-nav {
+.footer-nav {
 	text-transform: uppercase;
-	padding: 2rem 0;
+	margin: 1.5rem 0;
+	padding: 0;
 }
-footer .footer-container .footer-nav li {
+.footer-nav li {
 	display: inline-block;
 	list-style: none;
 }
-footer .footer-container .footer-nav li + li {
-	margin-left: 1rem;
+.footer-nav li + li {
+	margin-left: 1.5rem;
 }
-footer .footer-container .footer-icons {
-	width: 10rem;
-	margin-left: 1rem;
-	margin-bottom: 1rem;
+.footer-icons {
+	font-size: 1.6rem;
 	display: flex;
+	width: 12.5rem;
 	justify-content: space-between;
-	font-size: 1.3rem;
 }
 
 /*==================================================*/
 /*==================== ANIMATION ===================*/
 
-/* ----Slide In ----*/
+
+/* ------------------- SLIDE IN ------------------- */
 .slideanim {
 	visibility: hidden;
 }
@@ -393,7 +392,7 @@ footer .footer-container .footer-icons {
 	} 
 }
 
-/* ---- Scroll-Arrow ----*/
+/* ----------------- SCROLL ARROW ----------------- */
 a .fa-angle-double-down {
 	animation-name: arrow-float;
 	animation-iteration-count: infinite;
