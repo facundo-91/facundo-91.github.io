@@ -44,13 +44,13 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 					<a class="nav-link" href="#projects">Portfolio</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 					<a class="nav-link" href="#about">About Me</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 					<a class="nav-link" href="#contact">Contact</a>
 				</li>
 			</ul>
@@ -66,10 +66,10 @@
 	<hr>
 	<div class="container">
 		<div class="row project-wrap slideanim">
-			<div class="col-md-6">
-				<img class="project-img img-fluid" src="./images/project-1.png" alt="pic">
+			<div class="col-lg-6">
+				<img class="project-img img-fluid rounded" src="./images/project-1.png" alt="pic">
 			</div>
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<p class="project-title">Lindsey Stirling Fan Page</p>
 				<p class="project-text">This one was the final project from a web course. It have her music videos, track previews, gear from her shows and a fact generator. I used Bootstrap, a Spotify widget for the music and jQuery plugins for pagination and parallax effect.</p>
 				<p class="project-stack">Bootstrap 4 - jQuery</p>
@@ -80,10 +80,10 @@
 			</div>
 		</div>
 		<div class="row project-wrap slideanim">
-			<div class="col-md-6">
-				<img class="project-img img-fluid" src="./images/project-2.png" alt="pic">
+			<div class="col-lg-6">
+				<img class="project-img img-fluid rounded" src="./images/project-2.png" alt="pic">
 			</div>
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<p class="project-title">Weather App</p>
 				<p class="project-text">A Weather App, where the user put the name of the city/town and get the current weather info (temperature, pressure and humidity). Made in React and the data is fetched from the OpenWeather API.</p>
 				<p class="project-stack">React - API</p>
@@ -94,10 +94,10 @@
 			</div>
 		</div>
 		<div class="row project-wrap slideanim">
-			<div class="col-md-6">
-				<img class="project-img img-fluid" src="./images/project-3.png" alt="pic">
+			<div class="col-lg-6">
+				<img class="project-img img-fluid rounded" src="./images/project-3.png" alt="pic">
 			</div>
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<p class="project-title">Quote Generator</p>
 				<p class="project-text">A Random Quote Generator App made in vanilla JavaScript. From a hand picked selection of quotes from the field of computer science, the user can generate new ones by clicking a button.</p>
 				<p class="project-stack">Vanilla JS - API</p>
@@ -185,9 +185,7 @@
 			<div class="form-group">
 				<textarea class="form-control" name="message" placeholder=" Enter Your Message..."></textarea>
 			</div>
-			<div class="text-center">
 				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-			</div>
 		</div>
 	</form>
 	<div class="form-thank-you">
