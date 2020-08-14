@@ -35,6 +35,13 @@ a:link {
 	text-transform: uppercase;
 	color: var(--primary-text-color);
 }
+.section-subtitle {
+	font-size: 1rem;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
+	margin: 2rem 0 0;
+}
 hr {
 	width: 6rem;
 	border-top: 3px solid var(--primary-text-color);
@@ -198,12 +205,22 @@ a .fa-angle-double-down {
 	min-height: 34.375rem;
 	transition: all .2s ease-in-out;
 }
+.highlight {
+	flex-direction: column;
+	min-height: auto;
+}
+.highlight-text {
+	display: flex;
+	min-height: 20.926rem;
+	margin: 0;
+	flex-direction: column;
+}
 .project-info {
 	margin: 1rem;
 	color: var(--primary-text-color)
 }
 .project-title {
-	font-size: 1.2rem;
+	font-size: 1.125rem;
 	text-transform: uppercase;
 }
 .project-description {
@@ -512,6 +529,9 @@ a .fa-angle-double-down {
 	.section-title {
 		font-size: 2rem;
 	}
+	.section-subtitle {
+		font-size: 1.25rem;
+	}
 	#projects .col-lg-4 {
 		padding-left: 0.2rem;
 		padding-right: 0.2rem;
@@ -545,6 +565,12 @@ a .fa-angle-double-down {
 
 /* DESKTOPS */
 @media (min-width: 992px) {
+	.highlight {
+		flex-direction: row;
+	}
+	.highlight-text {
+		margin: 1rem 0 0;
+	}
 	.footer-container {
 		width: 60rem;
 		margin: 0 auto;
@@ -568,7 +594,7 @@ a .fa-angle-double-down {
 		font-size: 1.5rem;
 	}
 	.project-title {
-		font-size: 1.3rem;
+		font-size: 1.25rem;
 	}
 	.about-txt {
 		font-size: 1.445rem;
