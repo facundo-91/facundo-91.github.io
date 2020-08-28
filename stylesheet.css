@@ -223,6 +223,9 @@ a .fa-angle-double-down {
 	margin: 0;
 	flex-direction: column;
 }
+.project-img {
+	flex-shrink: 0;
+}
 .project-info {
 	margin: 1rem;
 	color: var(--primary-text-color)
