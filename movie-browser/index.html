@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Movie Browser App</title>
+    <link rel="stylesheet" href="../projects-stylesheet.css" />
+  </head>
+  <body>
+    <h1 class="title">Movie Browser App</h1>
+    <hr />
+    <div class="container">
+      <div class="card">
+        <div class="center">
+          <h3 class="subtitle">Introduction</h3>
+          <p class="text">
+            Web App for browsing movie info coming from TheMovieDB API. You can
+            find the synopsis, duration, rating and more. Also have account
+            creation support to bookmark your favorites.
+          </p>
+          <ul class="list-container">
+            <li class="stack-title">
+              Stack:
+              <ul class="stack">
+                <li>React</li>
+                <li>Context API</li>
+                <li>React Router</li>
+                <li>Firebase</li>
+                <li>TailwindCSS</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="project-links">
+            <a
+              class="link-project"
+              href="https://facundo-91.github.io/movie-browser-react"
+              target="_blank"
+              ><div class="link-icon"></div>
+              Open Project</a
+            >
+            <a
+              class="link-source"
+              href="https://github.com/facundo-91/movie-browser-react"
+              target="_blank"
+              ><div class="github-icon"></div>
+              View Source</a
+            >
+          </div>
+        </div>
+        <img src="main.png" class="img-main" />
+        <div class="center">
+          <h3 class="subtitle">Purpose and goal</h3>
+          <p class="text">
+            Developed to solidify my React knowledge, so I choose to practice by
+            building a Full-stack app with user authentication and a database.
+          </p>
+        </div>
+        <img src="movie-info.png" class="img-main-2" />
+        <div class="right">
+          <h3 class="subtitle">Features</h3>
+          <ul class="list">
+            <li>
+              User authentication with Google or with email and password using
+              Firebase.
+            </li>
+            <li>Adding your favorites movies to a list using Firestore.</li>
+            <li>
+              Debounce search to reduce amount of server calls on every key
+              stroke.
+            </li>
+          </ul>
+        </div>
+        <div class="grid-3">
+          <img src="signin.png" class="grid-3-img-1" />
+          <img src="watchlist.png" class="grid-3-img-2" />
+          <img src="movie-search.png" class="grid-3-img-3" />
+        </div>
+        <div class="left">
+          <h3 class="subtitle">Lessons Learned</h3>
+          <ul class="list">
+            <li>
+              How to implement Firebase in the project for the authentication
+              and the database.
+            </li>
+            <li>Using the Context API to use with Firebase.</li>
+            <li>Routing of pages with React Router.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

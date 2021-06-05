@@ -1,0 +1,288 @@
+:root {
+  --primary-color: #202020;
+  --secundary-color: #fff;
+  --primary-text-color: #1f1f1f;
+  --secundary-text-color: #212529;
+  --primary-bg-color: #fff;
+  --secundary-bg-color: #f4f4f4;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --form-bg-color: #fff;
+  --form-sended-bg-color: #d4edda;
+  --form-sended-text-color: #155724;
+  --form-sended-border-color: #c3e6cb;
+  --footer-section-bg-color: #272727;
+  --footer-icon-color: #808080;
+  --footer-text-color: #808080;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  color: var(--primary-text-color);
+  background-color: var(--secundary-bg-color);
+  margin: 4rem 0;
+}
+a:hover,
+a:focus,
+a:active,
+a:visited,
+a:link {
+  text-decoration: none;
+}
+hr {
+  width: 6rem;
+  border-top: 3px solid var(--primary-text-color);
+}
+.container {
+  margin: 3rem auto;
+}
+.card {
+  margin: 0 2.5%;
+  padding: 1rem 1.5rem;
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--border-color);
+}
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+li {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  text-align: justify;
+  color: var(--primary-text-color);
+}
+.text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2rem;
+  text-align: justify;
+  margin: 2rem auto;
+}
+.list-container {
+  padding: 0;
+}
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+.stack li {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 2rem;
+  list-style: none;
+  text-transform: uppercase;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  padding: 0 1.5rem;
+  background-color: var(--secundary-bg-color);
+}
+.stack-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+.project-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5rem 0;
+  gap: 0.5rem;
+}
+.link-project,
+.link-source {
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0.532rem;
+  width: 100%;
+}
+.link-project {
+  background-color: var(--primary-color);
+  color: var(--secundary-color);
+  border: 1px solid transparent;
+}
+.link-source {
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+.github-icon,
+.link-icon {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.25rem;
+  background-size: 1rem 1rem;
+}
+.github-icon {
+  background-image: url("https://icongr.am/fontawesome/github.svg?size=32&color=202020");
+}
+.link-icon {
+  background-image: url("https://icongr.am/fontawesome/link.svg?size=32&color=ffffff");
+}
+@media (hover: hover) {
+  .link-project:hover {
+    background-color: rgba(32, 32, 32, 0.9);
+    color: #fff;
+  }
+  .link-source:hover {
+    background-color: #dadce0;
+    color: #263238;
+  }
+}
+.left {
+  margin: 5rem auto 5rem 0;
+  max-width: 50rem;
+}
+.right {
+  margin: 3rem 0 3rem auto;
+  max-width: 50rem;
+}
+.center {
+  margin: 3rem auto;
+  max-width: 50rem;
+  text-align: center;
+}
+.list {
+  padding-left: 1rem;
+}
+.grid-2 {
+  display: grid;
+  grid: 100% / 50% 50%;
+  gap: 8% 10%;
+  margin: 0 10% 16% 0;
+  justify-items: center;
+}
+.grid-3 {
+  display: grid;
+  grid: repeat(4, 25%) / 50% 50%;
+  gap: 8% 2%;
+  margin: 0 2% 16% 0;
+}
+.grid-3-img-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.grid-3-img-2 {
+  grid-row-start: -4;
+  grid-row-end: -3;
+}
+.grid-3-img-3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.grid-2-img-1,
+.grid-2-img-2,
+.grid-3-img-1,
+.grid-3-img-2,
+.grid-3-img-3,
+.img-main,
+.img-main-2,
+.img-main-3 {
+  box-shadow: 0.5rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.75);
+  margin: 1rem 0;
+  width: 100%;
+  height: auto;
+}
+.img-main-3 {
+  display: block;
+  margin: 0 auto;
+  max-width: 25rem;
+}
+
+/*==================================================*/
+/*=================== RESPONSIVE ===================*/
+
+/* TABLETS */
+@media (min-width: 768px) {
+}
+/* DESKTOPS */
+@media (min-width: 992px) {
+  .card {
+    margin: 0 5%;
+    padding: 1rem 3rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 2.25rem;
+  }
+  li {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .project-links {
+    flex-direction: row;
+    gap: 0;
+  }
+  .link-project,
+  .link-source {
+    width: 20rem;
+  }
+  .left {
+    margin: 10rem 0 5rem 1.5rem;
+  }
+}
+/* LARGE DESKTOPS */
+@media (min-width: 1200px) {
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #ffffff;
+    --secundary-color: #181818;
+    --primary-text-color: #e0e0e0;
+    --secundary-text-color: #aaa;
+    --primary-bg-color: #181818;
+    --secundary-bg-color: #212121;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --form-bg-color: #000;
+  }
+  .github-icon {
+    background-image: url("https://icongr.am/fontawesome/github.svg?size=32&color=ffffff");
+    background-size: 1rem 1rem;
+  }
+  .link-icon {
+    background-image: url("https://icongr.am/fontawesome/link.svg?size=32&color=202020");
+    background-size: 1rem 1rem;
+  }
+  .img-1,
+  .img-2,
+  .img-3 {
+    box-shadow: 0.5rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.9);
+  }
+}
+@media (hover: hover) and (prefers-color-scheme: dark) {
+  .link-project:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  .link-source:hover {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}

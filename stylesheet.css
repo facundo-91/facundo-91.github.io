@@ -246,6 +246,14 @@ a .fa-angle-double-down {
   text-align: left;
   text-transform: uppercase;
 }
+.highlight-link {
+  font-size: 1.125rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--primary-text-color);
+  margin: auto 2rem 1.5rem;
+}
 .project-links {
   display: flex;
   flex-direction: column;
@@ -268,8 +276,11 @@ a .fa-angle-double-down {
   margin: 0.5rem 0;
 }
 @media (hover: hover) {
-  .project-wrap:hover {
+  .highlight:hover {
     box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.3);
+  }
+  a:hover .highlight-link {
+    text-decoration: underline;
   }
   .link-project:hover {
     background-color: rgba(32, 32, 32, 0.9);
@@ -292,10 +303,9 @@ a .fa-angle-double-down {
 .about-txt {
   font-size: 1.25rem;
   font-weight: 300;
-  letter-spacing: 0.1rem;
   line-height: 2rem;
   text-align: justify;
-  margin: 2rem auto;
+  margin: 3.5rem auto;
   padding: 0 2rem;
 }
 .about-tech {
@@ -308,8 +318,55 @@ a .fa-angle-double-down {
 .about-icons {
   margin: 0 1rem 2rem;
 }
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
 .icon {
-  margin: 0 0.5rem 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: 2.5rem 2.5rem;
+}
+.html5 {
+  background-image: url("https://icongr.am/simple/html5.svg?size=42&color=202020");
+}
+.css3 {
+  background-image: url("https://icongr.am/simple/css3.svg?size=42&color=202020");
+}
+.javascript {
+  background-image: url("https://icongr.am/simple/javascript.svg?size=42&color=202020");
+}
+.bootstrap {
+  background-image: url("https://icongr.am/simple/bootstrap.svg?size=42&color=202020");
+}
+.tailwind-css {
+  background-image: url("https://icongr.am/simple/tailwindcss.svg?size=42&color=202020");
+}
+.react {
+  background-image: url("https://icongr.am/simple/react.svg?size=42&color=202020");
+}
+.react-router {
+  background-image: url("https://icongr.am/simple/reactrouter.svg?size=42&color=202020");
+}
+.firebase {
+  background-image: url("https://icongr.am/simple/firebase.svg?size=42&color=202020");
+}
+.git {
+  background-image: url("https://icongr.am/simple/git.svg?size=42&color=202020");
+}
+.github {
+  background-image: url("https://icongr.am/simple/github.svg?size=42&color=202020");
+}
+.vscode {
+  background-image: url("https://icongr.am/simple/visualstudiocode.svg?size=42&color=202020");
+}
+.linux {
+  background-image: url("https://icongr.am/simple/linux.svg?size=42&color=202020");
+}
+.apple {
+  background-image: url("https://icongr.am/simple/apple.svg?size=42&color=202020");
 }
 
 /*==================================================*/
@@ -609,9 +666,9 @@ a .fa-angle-double-down {
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color: #e0e0e0;
+    --primary-color: #ffffff;
     --secundary-color: #181818;
-    --primary-text-color: #f4f4f4;
+    --primary-text-color: #e0e0e0;
     --secundary-text-color: #aaa;
     --primary-bg-color: #181818;
     --secundary-bg-color: #212121;
@@ -639,19 +696,58 @@ a .fa-angle-double-down {
   .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.5);
   }
+  .html5 {
+    background-image: url("https://icongr.am/simple/html5.svg?size=42&color=e0e0e0");
+  }
+  .css3 {
+    background-image: url("https://icongr.am/simple/css3.svg?size=42&color=e0e0e0");
+  }
+  .javascript {
+    background-image: url("https://icongr.am/simple/javascript.svg?size=42&color=e0e0e0");
+  }
+  .bootstrap {
+    background-image: url("https://icongr.am/simple/bootstrap.svg?size=42&color=e0e0e0");
+  }
+  .tailwind-css {
+    background-image: url("https://icongr.am/simple/tailwindcss.svg?size=42&color=e0e0e0");
+  }
+  .react {
+    background-image: url("https://icongr.am/simple/react.svg?size=42&color=e0e0e0");
+  }
+  .react-router {
+    background-image: url("https://icongr.am/simple/reactrouter.svg?size=42&color=e0e0e0");
+  }
+  .firebase {
+    background-image: url("https://icongr.am/simple/firebase.svg?size=42&color=e0e0e0");
+  }
+  .git {
+    background-image: url("https://icongr.am/simple/git.svg?size=42&color=e0e0e0");
+  }
+  .github {
+    background-image: url("https://icongr.am/simple/github.svg?size=42&color=e0e0e0");
+  }
+  .vscode {
+    background-image: url("https://icongr.am/simple/visualstudiocode.svg?size=42&color=e0e0e0");
+  }
+  .linux {
+    background-image: url("https://icongr.am/simple/linux.svg?size=42&color=e0e0e0");
+  }
+  .apple {
+    background-image: url("https://icongr.am/simple/apple.svg?size=42&color=e0e0e0");
+  }
 }
 @media (hover: hover) and (prefers-color-scheme: dark) {
-  .project-wrap:hover {
+  .highlight:hover {
     box-shadow: 0 0.25rem 0.75rem 0 rgba(0, 0, 0, 0.9);
   }
   .link-project:hover,
   .submit:hover {
-    background-color: #fff;
+    background-color: #e0e0e0;
     color: #000;
   }
   .link-source:hover {
     background-color: var(--primary-bg-color);
-    border-color: var(--primary-color);
     color: #fff;
+    border-color: var(--primary-color);
   }
 }
