@@ -7,39 +7,39 @@
     <link rel="stylesheet" href="../projects-stylesheet.css" />
   </head>
   <body>
-    <h1 class="title">To-Do App</h1>
+    <h1 class="title">Fullstack To-Do App</h1>
     <hr />
     <div class="container">
       <div class="card">
         <div class="center">
           <h3 class="subtitle">Introduction</h3>
           <p class="text">
-            A To-Do list Web App where the user can add tasks and check the ones
-            that completes. In addition you can remove the tasks completed or
-            all of them.
+            A To-Do list Web App using the design provided from a Frontend
+            Mentor challenge and built using React for the Front-end and
+            ExpressJS with MongoDB for the Back-end.
           </p>
           <ul class="list-container">
             <li class="stack-title">
               Stack:
               <ul class="stack">
                 <li>React</li>
-                <li>Hooks</li>
-                <li>Local Storage</li>
-                <li>PWA</li>
+                <li>Axios</li>
+                <li>Express</li>
+                <li>MongoDB</li>
               </ul>
             </li>
           </ul>
           <div class="project-links">
             <a
               class="link-project"
-              href="https://facundo-91.github.io/todo-list-react"
+              href="https://mern-todo-appx.herokuapp.com/"
               target="_blank"
               ><div class="link-icon"></div>
               Open Project</a
             >
             <a
               class="link-source"
-              href="https://github.com/facundo-91/todo-list-react"
+              href="https://github.com/facundo-91/mern-todo-app"
               target="_blank"
               ><div class="github-icon"></div>
               View Source</a
@@ -50,34 +50,33 @@
         <div class="center">
           <h3 class="subtitle">Purpose and goal</h3>
           <p class="text">
-            Developed to improve my skills in React, such as managing states and
-            learn using some hooks.
+            Developed to learn some backend by building a simple server that
+            connects with a database.
           </p>
         </div>
         <img src="main-2.png" class="img-main-2" />
         <div class="right">
           <h3 class="subtitle">Features</h3>
           <ul class="list">
+            <li>Add and delete todos from the list.</li>
+            <li>Filter by all, active, and completed todos.</li>
             <li>
-              The tasks you add will be saved in localstorage. If you refresh
-              the page, the list won't be lost.
+              Added todos will be saved in a database. If you refresh the page,
+              the list won't be lost.
             </li>
-            <li>
-              It's a Progressive Web App. You can install it on a mobile and use
-              it like a native app.
-            </li>
+            <li>Light/Dark mode toggle.</li>
           </ul>
         </div>
-        <img src="mobile.png" class="img-main-3" />
+        <div class="grid-2">
+          <img src="mobile.png" class="grid-2-img-1" />
+          <img src="mobile-dark.png" class="grid-2-img-2" />
+        </div>
         <div class="left">
           <h3 class="subtitle">Lessons Learned</h3>
           <ul class="list">
-            <li>
-              How to use the Localstorage to write and save data to read it
-              later.
-            </li>
-            <li>Using the spread syntax on arrays.</li>
-            <li>Using filter() and map() methods on arrays.</li>
+            <li>Building a server with Express.</li>
+            <li>Using a NoSQL database.</li>
+            <li>Folder structuring of a backend project.</li>
           </ul>
         </div>
       </div>

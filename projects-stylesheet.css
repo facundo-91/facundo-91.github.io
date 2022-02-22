@@ -61,14 +61,12 @@ li {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 2.5rem;
-  text-align: justify;
   color: var(--primary-text-color);
 }
 .text {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 2rem;
-  text-align: justify;
   margin: 2rem auto;
 }
 .list-container {
@@ -159,7 +157,6 @@ li {
 .center {
   margin: 3rem auto;
   max-width: 50rem;
-  text-align: center;
 }
 .list {
   padding-left: 1rem;
