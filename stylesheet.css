@@ -485,8 +485,7 @@ footer p {
 .footer-icons {
   font-size: 2rem;
   display: flex;
-  width: 15rem;
-  justify-content: space-between;
+  gap: 1rem;
 }
 @media (hover: hover) {
   footer a:hover {
@@ -641,7 +640,6 @@ a .fa-angle-double-down {
   }
   .footer-icons {
     font-size: 1.5rem;
-    width: 12rem;
   }
 }
 
