@@ -266,6 +266,11 @@ a .fa-angle-double-down {
   border-radius: 4px;
   padding: 0.469rem;
 }
+.no-link {
+  cursor: not-allowed;
+  background-color: rgba(32, 32, 32, 0.9);
+  color: #fff;
+}
 .link-source {
   font-size: 0.875rem;
   background-color: var(--secundary-color);
@@ -731,6 +736,10 @@ a .fa-angle-double-down {
   }
   .apple {
     background-image: url("https://icongr.am/simple/apple.svg?size=42&color=e0e0e0");
+  }
+  .no-link {
+    background-color: #e0e0e0;
+    color: #000;
   }
 }
 @media (hover: hover) and (prefers-color-scheme: dark) {
